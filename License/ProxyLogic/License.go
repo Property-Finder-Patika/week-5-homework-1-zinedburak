@@ -2,6 +2,7 @@ package ProxyLogic
 
 import "fmt"
 
+// License object to create simple licenses and check its limit ext...
 type License struct {
 	Name      string
 	UserCount int

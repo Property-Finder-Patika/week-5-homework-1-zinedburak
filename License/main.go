@@ -5,6 +5,8 @@ import (
 )
 
 func main() {
+	// Basic demonstration of proxy design pattern
+
 	admin := new(ProxyLogic.RealAdmin)
 	adminQuarters := ProxyLogic.NewAdminQuarters(admin)
 	user := ProxyLogic.NewUser(adminQuarters)

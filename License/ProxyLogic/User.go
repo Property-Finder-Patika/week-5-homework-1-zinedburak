@@ -5,6 +5,7 @@ type User struct {
 	adminQuarters *AdminQuarters
 }
 
+// Citizen Struct from lectures it can check its license status and but new license
 func NewUser(quarters *AdminQuarters) User {
 	user := new(User)
 	user.adminQuarters = quarters

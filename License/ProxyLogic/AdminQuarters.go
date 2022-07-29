@@ -1,5 +1,6 @@
 package ProxyLogic
 
+//	AdminQuarters which is the equivalent of the BasbakanlikVekili in our lecture
 type AdminQuarters struct {
 	SiteAdmin *SiteAdmin
 }

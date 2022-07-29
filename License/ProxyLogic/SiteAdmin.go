@@ -11,9 +11,12 @@ func (s *SiteAdmin) New(realAdmin *RealAdmin) SiteAdmin {
 	return *s
 }
 
+// The communucation with the real admin
 func (s SiteAdmin) BlockLicense(license *License) {
 	s.realAdmin.BlockLicense(license)
 }
+
+// Site admin will communicate with real admin if the license is out of limit
 
 func (s SiteAdmin) CheckLicenseStatus(license *License) {
 	if license.Limit >= license.UserCount {
